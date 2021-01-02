@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="arriba" class="title-container">
+        <h1>Push to remote</h1>
+    </div>
+    <div class="graph-container">
+        <div class="legends">
+            <p class="legend-1">$ git add <i>files</i>
+            <br>o<br>
+            $ git add .</p>
+            <p class="legend-2">$ git commit -m "<i>commit details</i>"</p>
+            <p class="legend-3">$ git push origin <i>remotebranch</i></p>
+        </div>
+        <div class="arrows">
+            <div>
+                <img class="arrow arrow-1" src="img/arrows.jpg" alt="flechas">
+            </div>
+            <div>
+                <img class="arrow arrow-2" src="img/arrows.jpg" alt="flechas">
+            </div>
+            <div>
+                <img class="arrow arrow-3" src="img/arrows.jpg" alt="flechas">
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="btn-2">
+                <p>WORKING DIRECTORY</p>
+            </div>
+            <div class="btn-2">
+                <p> STAGING AREA</p>
+            </div>
+            <div class="btn-2">
+                <p>HISTORY</p>
+            </div>
+            <div class="btn-2">
+                <p>REMOTE REPOSITORY</p>
+            </div>
+        </div>
+    </div>  
+    <hr>
+    <div class="container">
+        <div  class="title-container">
+            <h1>Pasos</h1>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <p class="step-number">1.</p>
+                <p class="step-text">Abrimos la consola del editor, y nos ubicamos en la carpeta del proyecto o clase.</p>
+                <span class="code"><code>$ cd <i>ruta/de/nuestro-proyecto</i></code></span>
+                <img src="img/terminal1.jpg" alt="consola vs code">
+                <p class="step-text">Oooo...</p>
+                <p class="step-text">Abrimos la consola del SO o de Git, y nos ubicamos en la carpeta del proyecto o clase.</p>
+                <span class="code"><code>$ cd <i>ruta/de/nuestro-proyecto</i></code></span>
+                <img src="img/terminal2.jpg" alt="consola de Git">
+            </div>
+            <div class="step">
+                <p class="step-number">2.</p>
+                <p class="step-text">Vamos a Github y copiamos el link de nuestro repositorio remoto.</p>
+                <span class="code"><code>Ejemplo: <i>https://github.com/usuariodegit/mirepositorio.git</i></code></span>
+                <img style="width: 90%;" src="img/github1.jpg" alt="config de respositorio de github">
+            </div>
+            <div class="step">
+                <p class="step-number">3.</p>
+                <p class="step-text">Volvemos a la consola y agregamos nuestro repositorio remoto.</p>
+                <span class="code"><code>$ git remote add origin <i>https://github.com/usuariodegit/mirepositorio.git</i></code></span>
+                <img src="img/terminal3.jpg" alt="consola de git">
+            </div>
+            <div class="step">
+                <p class="step-number">4.</p>
+                <p class="step-text">Pusheamos a nuestro respositorio remoto.</p>
+                <span class="code"><code>$ git push origin <i>nombre-del-branch</i></code></span>
+                <img src="img/terminal4.jpg" alt="consola de git">
+            </div>
+            <div class="step">
+                <p class="step-number">5.</p>
+                <p class="step-text">Vemos los archivos subidos a nuestro respositorio remoto.</p>
+                <img src="img/terminal10.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">6.</p>
+                <p class="step-text">Gritamos como Ned.</p>
+                <img src="img/flanders.jpg" alt="">
+            </div>
+        </div>
+        <span class="btn1-container">
+            <a href="#recursos" class="btn-1">
+                Recursos Extra
+            </a>
+        </span>
+    </div>
+
+<hr>
+
+    <div class="container">
+        <div  class="title-container">
+            <h1>Si queremos pushear a otra rama distanta de main...</h1>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <p class="step-number">1.</p>
+                <p class="step-text">Creamos una nueva rama en el reposiorio local.</p>
+                <span class="code"><code>$ git branch &nbsp<i>nombre-del-branch</i></code></span>
+                <img src="img/terminal6.jpg" alt="consola de git">
+            </div>
+            <div class="step">
+                <p class="step-number">2.</p>
+                <p class="step-text">Creamos una nueva rama en el repositorio remoto.</p>
+                <span class="code"><code>$ git branch &nbsp<i>nombre-del-branch</i></code></span>
+                <img src="img/github2.jpg" alt="">
+                <img src="img/github3.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">3.</p>
+                <p class="step-text">Cambiamos a la nueva rama.</p>
+                <span class="code"><code>$ git checkout &nbsp<i>nombre-del-branch</i></code></span>
+                <img src="img/terminal5.jpg" alt="consola de git">
+            </div>
+            <div class="step">
+                <p class="step-number">4.</p>
+                <p class="step-text">Trabajamos en los cambios...</p>
+                <img src="img/homero.jpg" alt="homero con vestido">
+            </div>
+            <div class="step">
+                <p class="step-number">5.</p>
+                <p class="step-text">Añadimos los cambios a staging.</p>
+                <span class="code"><code>$ git add .</code></span>
+                <img src="img/terminal7.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">6.</p>
+                <p class="step-text">Commiteamos los cambios en la rama de nuestro respositorio.</p>
+                <span class="code"><code>$ git commit -m <i>"detalle del commit"</i></code></span>
+                <img src="img/terminal8.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">7.</p>
+                <p class="step-text">Pusheamos los archivos a la rama de nuestro repositorio remoto.</p>
+                <span class="code"><code>$ git push origin <i>nombre-del-branch</i></code></span>
+                <img src="img/terminal9.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">8.</p>
+                <p class="step-text">Vemos los archivos subidos a la rama de nuestro respositorio remoto.</p>
+                <img src="img/github4.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">9.</p>
+                <p class="step-text">Gritamos como Ned.</p>
+                <img src="img/flanders.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div  class="title-container">
+            <h1 id="recursos">Algunos recursos extra</h1>
+            <a target="_blank" href="https://rogerdudler.github.io/git-guide/index.es.html">git - la guía sencilla</a>
+            <a href="https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf" target="_blank">Hoja de referencia para github</a>
+            <a href="https://medium.com/@sergupe6/control-de-versiones-por-qu%C3%A9-gitkraken-ee1f30b4a18f" target="_blank">Herramientas: control de versiones</a>
+        </div>
+        <span class="btn1-container">
+            <a href="#mas-recursos" class="btn-1">
+                Más Recursos
+            </a>
+        </span>
+    </div>
+
+<hr>
+
+    <div class="container">
+        <div class="title-container">
+            <h1>Mergear rama a main</h1>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <p class="step-number">1.</p>
+                <p class="step-text">Cambiamos a la rama donde vamos a trabajar.</p>
+                <span class="code"><code>$ git checkout &nbsp<i>nombre-del-branch</i></code></span>
+                <img src="img/terminal5.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">2.</p>
+                <p class="step-text">Trabajamos en los cambios hasta estar segurxs de que serán los definitivos.</p>
+                <img src="img/homero2.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">3.</p>
+                <p class="step-text">Añadimos los cambios a staging.</p>
+                <span class="code"><code>$ git add .</code></span>
+                <img src="img/terminal7.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">4.</p>
+                <p class="step-text">Commiteamos los cambios en la rama de nuestro respositorio.</p>
+                <span class="code"><code>$ git commit -m <i>"detalle del commit"</i></code></span>
+                <img src="img/terminal8.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">5.</p>
+                <p class="step-text">Cambiamos a la rama main.</p>
+                <span class="code"><code>$ git checkout main</code></span>
+                <img src="img/terminal12.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">6.</p>
+                <p class="step-text">Mergeamos la rama con main.</p>
+                <span class="code"><code>$ git merge main</code></span>
+                <img src="img/terminal11.jpg" alt="">
+            </div>
+            <div class="step">
+                <p class="step-number">7.</p>
+                <p class="step-text">Gritamos como Ned.</p>
+                <img src="img/flanders.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="title-container">
+                <h1 id="mas-recursos">Más recursos extra</h1>
+                <a target="_blank" href="https://stackabuse.com/git-merge-branch-into-master/">git merge into master</a>
+                <a href="https://desarrolloweb.com/articulos/archivo-gitignore.html" target="_blank">kelo ké gitignore?</a>
+                <a href="https://devcode.la/tutoriales/publicar-tu-web-usando-github-pages/" target="_blank">Github pages</a> 
+                <a href="https://vercel.com/docs" target="_blank">Vercel, para sitios estáticos</a>
+            </div>
+        </div>
+        <span class="btn1-container">
+            <a href="#arriba" class="btn-1 small">
+                Pa'rriba
+            </a>
+        </span>
+        
+    </div>
+    <footer>
+        <p>Diseñado por Noelia Avalos &copy 2021</p>
+        <span>
+            <a target="blank" href="https://github.com/noeliaava"><img class="footer-ico" src="img/github-green.svg" alt="Github Icon"></a>
+            <a target="blank" href="https://www.linkedin.com/in/m-noelia-avalos/"><img class="footer-ico" src="img/linkedin-green.svg" alt="Github Icon"></a>
+        </span>
+    </footer>
+</body>
+</html>
